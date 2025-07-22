@@ -201,7 +201,7 @@ std::vector<std::string> RedisClient::splitString(const char* s) {
 }
 
 std::string RedisClient::joinStrings(const std::vector<std::string>& strings, const std::string& separator)
-const {
+{
     if (strings.empty()) {
         return ""; // Return an empty string if the input vector is empty
     }

@@ -16,6 +16,7 @@ class RedisClient
 {
 
 public:
+
     RedisClient(std::string host, int port);
     ~RedisClient();
 
@@ -35,7 +36,7 @@ public:
     std::vector<std::string> getSubscriberChannels() const;
 
     // Help methods
-    std::string joinStrings(const std::vector<std::string>& strings, const std::string& separator) const;
+    static std::string joinStrings(const std::vector<std::string>& strings, const std::string& separator);
     bool getState(std::string value);
 
 private:
