@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.10...3.21)
 
 project(REDIS_CLIENT)
 
+set(CMAKE_CXX_STANDARD 17)
 
 set(LIBRARY_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/include/redisClient.h

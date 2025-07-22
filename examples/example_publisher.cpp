@@ -6,10 +6,10 @@
 #include <spdlog/spdlog.h>
 #include "redisClient.h"
 
-// When a subsriber channel is triggered. This function is called.
+// When a subscriber channel is triggered. This function is called.
 void workerFunction(std::vector<std::string> message)
 {
-    // The vector of strings is each word seperated by the colon
+    // The vector of strings is each word separated by the colon
     // For example
     //
     // Tiger:Eats:Fruit == {"Tiger", "Eats", "Fruit"}
